@@ -11,7 +11,7 @@
     "lint": "eslint src --ext .ts --fix",
     "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
     "dev": "tsx watch src/server.ts",
-    "build": "tsup src -d build",
+    "build": "tsup src --out-dir build",
     "test": "vitest"
   },
   "dependencies": {
